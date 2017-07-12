@@ -30,7 +30,7 @@ public Action OnPlayerRunCmd(client, &buttons, &impulse, float vel[3], float ang
         left = false;
         right = false
         
-        //Cant +left or +right if on ground. But you can use in air.
+        //Can't +left or +right if on ground. But you can use in air.
         if (buttons & IN_RIGHT || buttons & IN_LEFT)
         {
             TeleportEntity(client, NULL_VECTOR, fAngles, NULL_VECTOR);
