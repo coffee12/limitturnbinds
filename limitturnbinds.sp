@@ -28,7 +28,7 @@ public Action OnPlayerRunCmd(client, &buttons, &impulse, float vel[3], float ang
     if (GetEntityFlags(client) & FL_ONGROUND)
     {
         left = false;
-        right = false
+        right = false;
         
         //Can't +left or +right if on ground. But you can use in air.
         if (buttons & IN_RIGHT || buttons & IN_LEFT)
