@@ -34,7 +34,7 @@ public Action OnPlayerRunCmd(client, &buttons, &impulse, float vel[3], float ang
         if (buttons & IN_RIGHT || buttons & IN_LEFT)
         {
             TeleportEntity(client, NULL_VECTOR, fAngles, NULL_VECTOR);
-            return Action:0;
+            return Plugin_Continue;
         }
     }
     
@@ -42,7 +42,7 @@ public Action OnPlayerRunCmd(client, &buttons, &impulse, float vel[3], float ang
     if (left, right == true)
     {
         TeleportEntity(client, NULL_VECTOR, fAngles, NULL_VECTOR);
-        return Action:0;
+        return Plugin_Continue;
     }
-    return Action:0;
+    return Plugin_Continue;
 }
